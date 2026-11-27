@@ -1,0 +1,714 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(#1E4D2B, #001a09, #1E4D2B);
+    font-family: Arial, sans-serif;
+    color:#354234;
+
+}
+
+p{
+    color: whitesmoke;
+}
+
+header {
+    background-image: linear-gradient(#1E4D2B, #001a09, #001a09);
+    padding: 23px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 180px;
+    height: 120px;
+}
+
+.logo h1 {
+    color:#F7F6F4;
+    font-size: 30px;
+}
+
+.logo p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F7F6F4;
+    margin-left: 18px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #60880d;
+}
+
+
+.inicio {
+    background-color:#c2bbaf;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.apresentacao h2 {
+    font-size: 38px;
+    color: rgb(41, 73, 37);
+    margin-bottom: 15px;
+}
+
+.apresentacao p {
+    font-size: 17px;
+    margin-bottom: 30px;
+    color: #1d3815;
+}
+
+
+.pesquisa {
+    margin: auto;
+    max-width: 550px;
+    display: flex;
+    gap: 10px;
+}
+
+.pesquisa input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #5d575a;
+    border-radius: 8px;
+    outline: none;
+}
+
+.pesquisa button {
+    padding: 15px 22px;
+    background-color:#1E4D2B;;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.pesquisa button:hover {
+    background-color:#285f31;
+}
+
+.explorar {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.explorar h2,
+.categorias h2,
+.significados h2 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.subtitulo {
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.lista-termos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.cartao {
+    background-color: white;
+    padding: 30px 20px;
+    border: 1px solid #797476;
+    border-radius: 12px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.cartao h3 {
+    color: rgb(41, 73, 37);
+    margin-bottom: 12px;
+}
+
+.cartao p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    color: rgb(22, 37, 20);
+}
+
+.cartao a {
+    text-decoration: none;
+    color: #b6936f;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cartao:hover {
+    background-color: #ece8e8;
+    transform: rotate(0.5deg) scale(1.03);
+}
+
+
+.categorias {
+    background-color: #c2bbaf;
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.lista-categorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.categoria {
+    background-color: white;
+    padding: 25px 15px;
+    border-radius: 10px;
+}
+
+.categoria:hover {
+    background-color: #e7e6e6;
+    transform: rotate(0.5deg) scale(1.03);
+}
+
+.categoria h2{
+     color: #446643;
+  
+}
+
+.categoria h3 {
+    color: #446643;
+    margin-bottom: 10px;
+}
+
+.categoria p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #354234;
+}
+
+.significados {
+    padding: 65px 10%;
+}
+
+.significados h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.definicao {
+    background-color: white;
+    border-left: 5px solid #2c5b3a;
+    padding: 22px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+
+}
+
+.definicao:hover {
+    transform:  scale(1.03);
+    box-shadow: 0 5px 15px rgb(23, 53, 19);
+}
+
+.definicao h3 {
+    color: #2f4a35;
+    margin-bottom: 10px;
+}
+
+.definicao p {
+    font-size: 15px;
+    line-height: 1.6;
+    color:#1f311d;
+}
+
+.contribuir {
+    background-color:#c2bbaf;
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.contribuir h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.contribuir p {
+    margin-bottom: 25px;
+}
+
+.contribuir a {
+    background-color: #1E4D2B;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.contribuir a:hover {
+    background-color: #285f31;
+}
+
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+.direitos {
+    margin-top: 20px;
+    color: #ffffff;
+
+}
+
+
+.icone-usuario {
+    position: absolute;
+    right: 40px;
+    top: 66px;
+}
+
+.icone-usuario img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icone-usuario img:hover {
+    transform: scale(1.2);
+}
+
+.cachorro{
+  position:absolute;
+    right: 20px;
+    top: 180px;
+      width: 300px;
+    height: 300px;
+}
+
+.mvv {
+    background-color:#c2bbaf;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mvv h1 {
+    color: #244e2d;
+}
+
+.mvv p {
+    line-height: 1.5;
+}
+
+
+
+.redes-sociais {
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+
+    display: flex;
+    gap: 10px;
+
+    z-index: 999;
+}
+
+.redes-sociais img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: 0.3s;
+    
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    header img {
+        width: 110px;
+        height: 100px;
+        object-fit: contain;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-size: 26px;
+    }
+
+    .logo p {
+        font-size: 12px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        width: 100%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+
+    .icone-usuario {
+        position: static;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .icone-usuario img {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .inicio {
+        padding: 65px 25px;
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .apresentacao h2 {
+        font-size: 30px;
+    }
+
+    .apresentacao p {
+        font-size: 16px;
+        max-width: 550px;
+    }
+
+
+    .cachorro {
+        position: static;
+        display: block;
+
+        width: min(300px, 80%);
+        height: auto;
+
+        margin: 25px auto 0;
+        object-fit: contain;
+    }
+
+
+    .pesquisa {
+        width: 100%;
+        max-width: 550px;
+    }
+
+
+    .lista-termos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .lista-categorias {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .cartao {
+        padding: 25px 17px;
+    }
+
+    .categoria {
+        padding: 22px 15px;
+    }
+
+    .mvv {
+        width: 90%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+
+    header {
+        padding: 18px 12px;
+        gap: 12px;
+    }
+
+    header img {
+        width: 90px;
+        height: 85px;
+    }
+
+    .logo h1 {
+        font-size: 23px;
+    }
+
+    .logo p {
+        font-size: 11px;
+    }
+
+
+    nav {
+        gap: 3px;
+    }
+
+    nav a {
+        font-size: 13px;
+        margin: 3px;
+        padding: 8px 6px;
+    }
+
+    .icone-usuario img {
+        width: 29px;
+        height: 29px;
+    }
+
+    .inicio {
+        padding: 50px 18px;
+    }
+
+    .apresentacao h2 {
+        font-size: 25px;
+        line-height: 1.3;
+    }
+
+    .apresentacao p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 22px;
+    }
+
+    .cachorro {
+        position: static;
+        width: min(250px, 85%);
+        height: auto;
+
+        margin: 25px auto 0;
+    }
+
+    .pesquisa {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .pesquisa input {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .pesquisa button {
+        width: 100%;
+        padding: 14px;
+    }
+
+
+    .explorar,
+    .categorias {
+        padding: 45px 18px;
+    }
+
+    .significados {
+        padding: 45px 18px;
+    }
+
+    .explorar h2,
+    .categorias h2,
+    .significados h2 {
+        font-size: 23px;
+    }
+
+    .subtitulo {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .lista-termos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .lista-categorias {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .cartao {
+        padding: 23px 18px;
+    }
+
+    .categoria {
+        padding: 22px;
+    }
+
+
+    .definicao {
+        padding: 18px;
+        margin-bottom: 15px;
+    }
+
+    .definicao p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    .contribuir {
+        padding: 45px 20px;
+    }
+
+    .contribuir h2 {
+        font-size: 23px;
+    }
+
+    .contribuir p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    footer {
+        padding: 30px 15px;
+    }
+
+    footer h2 {
+        font-size: 21px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+
+    .redes-sociais {
+        position: static;
+        justify-content: center;
+        margin-top: 22px;
+        gap: 15px;
+    }
+
+    .redes-sociais img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .mvv {
+        width: 100%;
+        margin: 12px auto;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 380px) {       /* Para Celular */
+
+    header {
+        padding: 15px 8px;
+    }
+
+    .logo h1 {
+        font-size: 21px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 7px 5px;
+    }
+
+    .apresentacao h2 {
+        font-size: 22px;
+    }
+
+    .apresentacao p {
+        font-size: 14px;
+    }
+
+    .cachorro {
+        width: min(210px, 90%);
+    }
+
+    .explorar,
+    .categorias,
+    .significados {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .cartao,
+    .categoria,
+    .definicao {
+        padding: 18px 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .cartao,
+    .categoria,
+    .definicao,
+    .inicio {
+        min-width: 0;
+    }
+
+}

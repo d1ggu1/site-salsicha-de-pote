@@ -1,0 +1,366 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#c2bbaf; ;
+}
+
+p{
+    color: whitesmoke;
+}
+
+header {
+    background-image: linear-gradient(#1E4D2B, #001a09, #001a09);
+    padding: 23px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 180px;
+    height: 120px;
+}
+
+.logo h1 {
+    color:#F7F6F4;
+    font-size: 30px;
+}
+
+.logo p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F7F6F4;
+    margin-left: 18px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #60880d;
+}
+
+.icone-usuario {
+    position: absolute;
+    right: 35px;
+    top: 64px;
+}
+
+.icone-usuario img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icone-usuario img:hover {
+    transform: scale(1.1);
+}
+
+.cachorro{
+  position:absolute;
+    right: 10px;
+    top: 150px;
+      width: 400px;
+    height: 400px;
+}
+
+.cadastro {
+    width: 350px;
+    max-width: 85%;
+    background-color: white;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #746f6f;
+    box-sizing: border-box;
+}
+
+.h1cadastro {
+    text-align: center;
+    color: #1e3121;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pcadastro {
+    text-align: center;
+    color: #383535;
+}
+
+.labelcadastro {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.inputcadastro {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.buttoncadastro {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #26402d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttoncadastro:hover {
+    background-color: #1e3524;
+     transform: scale(1.1);
+}
+
+.voltar {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color:  #26402d;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    color: #1e3524;
+     transform: scale(1.1);
+
+}
+
+.cachorro{
+  position:absolute;
+    right: -80px;
+    top: 150px;
+      width: 700px;
+    height: 700px;
+}
+
+@media (max-width: 576px) {
+    .cachorro {
+        position: static;
+       width: 400px;
+    height: 400px;
+        display: block;
+        margin: 20px auto;
+    }}
+
+    
+.redes-sociais {
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+
+    display: flex;
+    gap: 10px;
+
+    z-index: 999;
+}
+
+.redes-sociais img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 576px) {
+    .redes-sociais {
+        bottom: 15px;
+        right: 15px;
+        gap: 8px;
+    }
+
+    .redes-sociais img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    header > img {
+        width: 80px;
+        height: auto;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .icone-usuario {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .divcadastro {
+        width: 80%;
+        max-width: 450px;
+        margin: 30px auto;
+        padding: 25px;
+    }
+
+    .inputcadastro {
+        width: 100%;
+    }
+
+    .cachorro {
+        max-width: 250px;
+        width: 35%;
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
+    }
+
+    header > img {
+        width: 65px;
+    }
+
+    .logo h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .logo p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .icone-usuario {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .icone-usuario img {
+        width: 25px;
+    }
+
+    .divcadastro {
+        width: 92%;
+        max-width: 400px;
+        margin: 25px auto;
+        padding: 20px;
+    }
+
+    .h1cadastro {
+        font-size: 25px;
+    }
+
+    .pcadastro {
+        font-size: 14px;
+    }
+
+    .labelcadastro {
+        font-size: 14px;
+    }
+
+    .inputcadastro {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .buttoncadastro {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .voltar {
+        font-size: 13px;
+    }
+
+    .cachorro {
+        position: static;
+        display: block;
+        width: 180px;
+        max-width: 70%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    footer {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .redes-sociais {
+        position: fixed;
+        bottom: 15px;
+        right: 12px;
+        z-index: 999;
+        gap: 8px;
+    }
+
+    .redes-sociais img {
+        width: 30px;
+        height: 30px;
+    }
+
+}
